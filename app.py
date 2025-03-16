@@ -26,7 +26,7 @@ if os.path.exists(audio_path):
                 insights = insights.strip()  # Eliminar espacios en blanco y saltos de línea
 
                 # Si OpenAI devuelve un bloque de código JSON, eliminar los delimitadores json ...
-                insights = re.sub(r"^json\n|\n$", "", insights)
+                insights = re.sub(r"^```json\n|\n```$", "", insights)
 
                 insights_json = json.loads(insights)
                 
