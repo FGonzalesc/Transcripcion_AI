@@ -1,0 +1,10 @@
+# Ignorar entornos virtuales
+venv/
+__pycache__/
+
+# Archivos de configuración y credenciales
+config.py
+
+# Archivos de caché
+*.log
+*.pyc
